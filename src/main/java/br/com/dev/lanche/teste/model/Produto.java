@@ -20,4 +20,5 @@ public class Produto extends BaseEntity {
     private Categoria categoria;
     private Long quantidade;
     private String imagem;
+
 }

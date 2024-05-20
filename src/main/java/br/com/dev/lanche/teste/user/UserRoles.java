@@ -2,12 +2,12 @@ package br.com.dev.lanche.teste.user;
 
 public enum UserRoles {
     ADMIN("admin"),
-    USER("user")
+    USER("user");
 
     private String role;
 
     UserRoles(String role){
-        this.role = role
+        this.role = role;
     }
 
     public String getRole(){
