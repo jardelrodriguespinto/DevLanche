@@ -17,13 +17,15 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Compra extends BaseEntity{
+public class Compra extends BaseEntity
+{
     private BigDecimal valor;
     private TipoPagto tipoPagto;
     @ManyToMany(mappedBy = "compras")
     private Set<Fornecedor> fornecedores;
 
-    public void addFornecedor(Fornecedor fornecedor){
+    public void addFornecedor(Fornecedor fornecedor)
+    {
         if (fornecedores == null)
             fornecedores = new HashSet<>();
 

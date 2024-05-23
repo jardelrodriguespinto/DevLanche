@@ -13,7 +13,8 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Pagamento extends BaseEntity {
+public class Pagamento extends BaseEntity
+{
     @OneToOne
     private Pedido pedido;
     private TipoPagto tipoPagto;

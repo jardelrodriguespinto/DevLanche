@@ -8,6 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Email extends BaseEntity {
+public class Email extends BaseEntity
+{
     private String email;
 }

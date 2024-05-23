@@ -12,7 +12,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Categoria extends BaseEntity {
-    private String nome;
+public class Categoria extends BaseEntity
+{
     private String descricao;
 }

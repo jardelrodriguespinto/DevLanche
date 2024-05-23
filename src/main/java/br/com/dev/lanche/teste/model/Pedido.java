@@ -12,7 +12,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Pedido extends BaseEntity {
+public class Pedido extends BaseEntity
+{
     @ManyToOne
     private Cliente cliente;
     private String dataPedido;

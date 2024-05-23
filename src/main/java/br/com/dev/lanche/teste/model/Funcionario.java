@@ -13,7 +13,8 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Funcionario extends BaseEntity {
+public class Funcionario extends BaseEntity
+{
     private String nome;
     private Integer idade;
     private Cargo cargo;

@@ -12,7 +12,8 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Produto extends BaseEntity {
+public class Produto extends BaseEntity
+{
     private String nome;
     private String descricao;
     private BigDecimal preco;

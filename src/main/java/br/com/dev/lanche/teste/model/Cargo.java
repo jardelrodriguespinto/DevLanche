@@ -11,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Cargo extends BaseEntity{
-    private String cargo;
+public class Cargo extends BaseEntity
+{
+    private String descricao;
 }

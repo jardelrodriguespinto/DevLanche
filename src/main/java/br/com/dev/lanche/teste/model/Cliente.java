@@ -4,7 +4,11 @@ import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,19 +19,19 @@ import java.util.Set;
 @Setter
 public class Cliente extends BaseEntity {
     private String nome;
+    private String sobrenome;
     @OneToOne
     private Email email;
     @OneToMany
-    private Set<Celular> celulares;
-    @OneToOne
-    private Telefone telefone;
+    private Set<Contato> contatos;
     @Embedded
     private Endereco endereco;
 
-    public void addCelulares(Celular celular){
-        if (celulares == null)
-            celulares = new HashSet<>();
+    public void addContatos(Contato contato)
+    {
+        if (contatos == null)
+            contatos = new HashSet<>();
 
-        celulares.add(celular);
+        contatos.add(contato);
     }
 }

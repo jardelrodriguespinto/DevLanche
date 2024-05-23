@@ -14,7 +14,8 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Fornecedor extends BaseEntity {
+public class Fornecedor extends BaseEntity
+{
     private String nome;
     private String email;
     private String telefone;

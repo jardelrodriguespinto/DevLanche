@@ -3,7 +3,8 @@ package br.com.dev.lanche.teste.model;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
-public class Endereco {
+public class Endereco
+{
     private String logradouro;
     private Integer numero;
     private Integer complemento;

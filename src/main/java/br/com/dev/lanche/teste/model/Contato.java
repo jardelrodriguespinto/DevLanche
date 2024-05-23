@@ -8,6 +8,8 @@ import lombok.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Celular  extends BaseEntity{
-    private String celular;
+public class Contato extends BaseEntity
+{
+    private String tipo;
+    private String numero;
 }
